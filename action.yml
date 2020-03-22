@@ -1,0 +1,29 @@
+name: "Simple FTP deploy"
+author: "Kévin Painchaud"
+description: "Deploy files to an FTP server using GitHub actions"
+inputs:
+  ftp_host:
+    description: "FTP host"
+    required: true
+  ftp_username:
+    description: "FTP username"
+    required: true
+  ftp_password:
+    description: "FTP password"
+    required: true
+  local_source_dir:
+    description: "The local folder to copy"
+    required: true
+  dist_target_dir:
+    description: "The remote folder"
+    required: true
+  delete:
+    description: "Delete files not present in the local folder on the remote folder"
+    required: false
+    default: "false"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "upload-cloud"
+  color: "blue"
