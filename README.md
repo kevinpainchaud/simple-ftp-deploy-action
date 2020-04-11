@@ -28,6 +28,10 @@ Deploy files to an FTP server using GitHub actions
 
 Delete files not present in the local folder on the remote folder. Default `"false"`.
 
+### `disable_ssl_certificate_verification`
+
+Disable SSL certificate verification. Default `"true"`.
+
 ## Example usage
 
 ```

@@ -21,6 +21,10 @@ inputs:
     description: "Delete files not present in the local folder on the remote folder"
     required: false
     default: "false"
+  disable_ssl_certificate_verification:
+    description: "Disable SSL certificate verification"
+    required: false
+    default: "true"
 runs:
   using: "docker"
   image: "Dockerfile"
