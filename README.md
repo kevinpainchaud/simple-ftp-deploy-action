@@ -28,6 +28,12 @@ Deploy files to an FTP server using GitHub actions
 
 Delete files not present in the local folder on the remote folder. Default `"false"`.
 
+### `exclude`
+
+Ignore file(s) and/or directorie(s). Default `()`.
+
+Fill an array of regex. E.g. `("^logs/", "^README.md")`
+
 ### `disable_ssl_certificate_verification`
 
 Disable SSL certificate verification. Default `"true"`.
@@ -40,7 +46,8 @@ with:
   ftp_host: ${{ secrets.FTP_HOST }}
   ftp_username: ${{ secrets.FTP_USERNAME }}
   ftp_password: ${{ secrets.FTP_PASSWORD }}
-  local_source_dir: dist
+  local_source_dir: "dist"
   dist_target_dir: "www/my-app"
   delete: "true"
+  exclude: ("^logs/", "^README.md")
 ```
