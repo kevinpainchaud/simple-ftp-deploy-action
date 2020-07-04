@@ -41,7 +41,7 @@ Disable SSL certificate verification. Default `"true"`.
 ## Example usage
 
 ```
-uses: kevinpainchaud/simple-ftp-deploy-action@v1
+uses: kevinpainchaud/simple-ftp-deploy-action@v1.1.0
 with:
   ftp_host: ${{ secrets.FTP_HOST }}
   ftp_username: ${{ secrets.FTP_USERNAME }}
