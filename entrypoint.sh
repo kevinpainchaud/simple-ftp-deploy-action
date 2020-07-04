@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh -l
 
 # Construct the exclude commands
 for excludedPath in "${INPUT_EXCLUDE[@]}"
