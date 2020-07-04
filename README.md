@@ -30,9 +30,9 @@ Delete files not present in the local folder on the remote folder. Default `"fal
 
 ### `exclude`
 
-Ignore file(s) and/or directorie(s). Default `()`.
+Ignore file(s) and/or directorie(s). Default `""`.
 
-Fill an array of regex. E.g. `("^logs/", "^README.md")`
+Fill an array of regex. E.g. `"'^logs/' '^README.md'"`
 
 ### `disable_ssl_certificate_verification`
 
@@ -49,5 +49,5 @@ with:
   local_source_dir: "dist"
   dist_target_dir: "www/my-app"
   delete: "true"
-  exclude: ("^logs/", "^README.md")
+  exclude: "'^logs/' '^README.md'"
 ```
