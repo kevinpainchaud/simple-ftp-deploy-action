@@ -28,6 +28,16 @@ Deploy files to an FTP server using GitHub actions
 
 Delete files not present in the local folder on the remote folder. Default `"false"`.
 
+### `only_newer`
+
+Download only newer files. Using time as default, see `ignore_time` option. Default `"false"`.
+
+### `ignore_time`
+
+Ignore time when deciding whether to download. Default `"false"`.
+
+If you set to `"true"` the filesize will be used for deciding, this mean if you only change a typo in your document - without a change to the filesize - the file will be ignored.
+
 ### `exclude`
 
 Ignore file(s) and/or directorie(s). Default `""`.
