@@ -21,6 +21,14 @@ inputs:
     description: "Delete files not present in the local folder on the remote folder"
     required: false
     default: "false"
+  only_newer:
+    description: "Download only newer files"
+    required: false
+    default: "false"
+  ignore_time:
+    description: "Ignore size when deciding whether to download"
+    required: false
+    default: "false"
   exclude:
     description: "Ignore file(s) and/or directorie(s)"
     required: false
