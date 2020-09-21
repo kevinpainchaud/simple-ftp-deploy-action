@@ -40,7 +40,7 @@ If you set to `"true"` the filesize will be used for deciding, this mean if you 
 
 ### `exclude`
 
-Ignore file(s) and/or directorie(s). Default `""`.
+Ignore file(s) and/or directorie(s).
 
 Fill an array of regex. E.g. `"'^logs/' '^README.md'"`
 
