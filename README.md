@@ -48,9 +48,13 @@ Fill an array of regex. E.g. `"'^logs/' '^README.md'"`
 
 Disable SSL certificate verification. Default `"true"`.
 
+### `other_flags`
+
+Optional, can be used to set raw string of flag(s) or option(s) for lftp eg. `"--no-empty-dirs --ascii"`, you can refer to the official docs for the full list of available flags and options. <https://lftp.yar.ru/lftp-man.html>
+
 ## Example usage
 
-```
+```bash
 uses: kevinpainchaud/simple-ftp-deploy-action@v1.1.0
 with:
   ftp_host: ${{ secrets.FTP_HOST }}

@@ -37,6 +37,10 @@ inputs:
     description: "Disable SSL certificate verification"
     required: false
     default: "true"
+  other_flags:
+    description: "Optional raw string of flags for lftp eg. --no-empty-dirs"
+    required: false
+    default: ""
 runs:
   using: "docker"
   image: "Dockerfile"
