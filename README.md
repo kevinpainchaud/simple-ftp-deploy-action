@@ -55,7 +55,7 @@ Optional, can be used to set raw string of flag(s) or option(s) for lftp eg. `"-
 ## Example usage
 
 ```bash
-uses: kevinpainchaud/simple-ftp-deploy-action@v1.1.0
+uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.0
 with:
   ftp_host: ${{ secrets.FTP_HOST }}
   ftp_username: ${{ secrets.FTP_USERNAME }}
